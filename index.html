@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+  <title>js/jq</title>
+  </head>
+  <body onpageshow="showPage()">
+    <h1 id="show_page" class="text-center"></h1>
+<section>
+ <h1 class="text-center">Example 1</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to change to text</h2>
+   <button type="button" class="btn btn-primary" onclick="textChange()">Click me</button>
+  <h3 id="h3" class="">Lorem ipsum, dolor sit.</h3>
+
+</div>
+</section>
+<section>
+ <h1 class="text-center">Example 2</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to change to text</h2>
+   <button type="button" class="btn btn-primary" onclick="textChangeClass()">Click me</button>
+  <h3 class="text">Lorem ipsum, dolor sit.</h3>
+
+</div>
+</section>
+<section>
+ <h1 class="text-center">Example 3</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to change to text</h2>
+   <button type="button" class="btn btn-primary" ondblclick="textChangeDbl()">Click me</button>
+  <h3 class="dbl">Lorem ipsum, dolor sit.</h3>
+
+</div>
+</section>
+<section>
+ <h1 class="text-center">Example 4</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to change to text</h2>
+   <button type="button" class="btn btn-primary" onmouseover="textChangeMouse()">Click me</button>
+  <h3 class="mouse">Lorem ipsum, dolor sit.</h3>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 5</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to change to text</h2>
+   <button type="button" class="btn btn-primary" onmouseout="textChangeMouseOut()">Click me</button>
+  <h3 class="mouse_out">Lorem ipsum, dolor sit.</h3>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 6</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to repeat the text</h2>
+   <button type="button" class="btn btn-primary" onclick="textRepeat()">Click me</button>
+  <h3 class="repeat">Lorem ipsum, dolor sit.</h3>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 7</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to change the img</h2>
+   <button type="button" class="btn btn-primary" onclick="imgChangeOne()">Button1</button>
+   <button type="button" class="btn btn-secondary" onclick="imgChangeTwo()">Button2</button>
+   <br>
+ <img src="images/img1.jpg" class="img-fluid change">
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 8</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to show alart</h2>
+   <button type="button" class="btn btn-primary" onclick="cAlert()">Click me</button>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 9</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to show alart</h2>
+   <button type="button" class="btn btn-primary" onclick="cAlertWindow()">Click me</button>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 10</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to show output by document.write</h2>
+   <button type="button" class="btn btn-primary" onclick="Window()">Click me</button>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 11</h1>
+
+  <div class="container">
+    <h2 class="text-info">select disabled & enable</h2>
+    <form class="form-control">
+<select id="Select">
+  <option>Apple</option>
+  <option>Pear</option>
+  <option>Banana</option>
+  <option>Orange</option>
+</select>
+<br><br>
+<input type="button" class="btn btn-primary" onclick="disable()" value="Disable list">
+<input type="button" class="btn btn-secondary" onclick="enable()" value="Enable list">
+</form>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 12</h1>
+  <div class="container">
+   <p class="text-info">When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+   <h2>Enter your name: <input type="text" id="fname" onblur="cFunction()"></h2>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 13</h1>
+  <div class="container">
+   <p class="text-info">When you Enter the input field, a function is triggered which sets the background color blue. When you leave the input field, a function is triggered which sets the background color green</p>
+   <h2>Enter your name: <input type="text" id="c_focus" onblur="cFocus()" onfocus="cuFocus()"></h2>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 14</h1>
+  <div class="container">
+   <h2 class="text-info">Try scrollbar in div</h2>
+   <div class="c_scr" onscroll="scrollText()">When you Enter the input field, a function is triggered which sets the background color blue. When you leave the input field, a function is triggered which sets the background color green.<br>
+   When you Enter the input field, a function is triggered which sets the background color blue. When you leave the input field, a function is triggered which sets the background color green.<br>
+   When you Enter the input field, a function is triggered which sets the background color blue. When you leave the input field, a function is triggered which sets the background color green</div>
+
+  <p class="text-info" id="cscroll"></p>
+</div>
+
+
+</section>
+
+<section>
+ <h1 class="text-center">Example 17</h1>
+  <div class="container">
+   <h2>Select some of the text: <input type="text" value="Hello world!" onselect="selectText()"></h2>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 18</h1>
+  <div class="container">
+    <p class="text-info">When you submit the form,a function is triggered which alarts some text.</p>
+   <form action="#" class="form-control" onsubmit="submitText()">
+     Enter name: <input type="text" name="full_name">
+     <input type="submit" value="Submit">
+   </form>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 20</h1>
+  <div class="container">
+   <h2>JavaScript Operators</h2>
+   <p class="text-info">x = 5, y = 4, calculate z= x + y, dispaly z</p>
+   <p id="operator"></p>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 21</h1>
+  <div class="container">
+   <h2>JavaScript Operators</h2>
+   <p class="text-info">x = 5, y = 3, calculate z= x * y, dispaly z</p>
+   <p id="multiplying"></p>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 22</h1>
+  <div class="container">
+   <button class="btn btn-secondary" id="time" onclick="timeShow()">The time is ?</button>
+   <p id="time"></p>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 23</h1>
+  <div class="container">
+   <h2 class="text-info">new page alart jq</h2>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 24</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to show the alart</h2>
+   <button type="button" id="alert" class="btn btn-primary">Click me</button>
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 25</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to hide the image</h2>
+   <button type="button" class="btn btn-primary im_s">Hide</button>
+   <br><br>
+   <img src="images/img2.jpg" class="img-fluid" alt="">
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 26</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to show/hide the image</h2>
+   <button type="button" id="hi_im" class="btn btn-primary">Hide</button>
+   <button type="button" class="btn btn-primary im_sh">Show</button>
+   <br><br>
+   <img src="images/img4.jpg" class="img-fluid" alt="">
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 27</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to toggle the image</h2>
+   <button type="button" class="btn btn-primary im_to">Toggle</button>
+   <br><br>
+   <img src="images/img5.jpg" class="img-fluid" alt="">
+
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 28</h1>
+  <div class="container">
+   <h2 class="text-info">Click the button to show/hide the image</h2>
+   <button type="button" class="btn btn-primary fa_i">FadeIn</button>
+   <button type="button" class="btn btn-primary fa_o">FadeOut</button>
+   <br><br>
+   <img src="images/img6.jpg" class="img-fluid" alt="">
+
+</div>
+</section>
+
+
+<section>
+ <h1 class="text-center">Example 29</h1>
+  <div class="container">
+    <h2 class="bg-info h2_1">Lorem ipsum dolor sit?</h2>
+    <p class="bg-warning p_1">Enter the input field, a function is triggered which sets the background color blue. When you leave the input field, a function is triggered which sets the background color green.Enter the input field, a function is triggered which sets the background color blue. When you leave the input field, a function is triggered which sets the background color green.</p>
+   
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 30</h1>
+  <div class="container">
+    <div class="pre_1"></div>
+    <div class="pre_1"></div>
+    <div class="pre_1"><span class="f_s text-center">child</span></div>
+    <div class="pre_1"></div>
+    <div class="pre_1"></div>
+    <div class="pre_1"></div>
+    <div class="pre_1"></div>
+    <div class="pre_1" id="start"></div>
+    <p><button class="btn btn-info">Go to Prev</button></p>
+   
+</div>
+</section>
+
+<section>
+ <h1 class="text-center">Example 31</h1>
+ <div class="container">
+<button id="sho_im" class="btn btn-danger">Show</button>
+<button id="hid_im" class="btn btn-danger">Hide</button>
+<img src="images/img1.jpg" class="sh_im img-fluid">
+<img src="images/img2.jpg" class="sh_im img-fluid">
+
+</div>
+</section>
+
+<section class="mt-5">
+  <h1 class="text-center">Example 32</h1>
+  <div class="container">
+   <div id="drag" class="ui-widget-content">
+    <img src="images/img1.jpg" class="img-fluid">
+   </div>
+    
+  </div>
+</section>
+
+<section class="mt-5">
+  <h1 class="text-center">Example 33</h1>
+  <div class="container">
+    <h2 class="text-center text-info">accordion</h2>
+   <div class="acco">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+   </div>
+    
+  </div>
+</section>
+
+<section class="mt-5">
+  <h1 class="text-center">Example 34</h1>
+  <div class="container">
+   <div class="tab">
+  <ul>
+    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+</div>
+    
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h1 class="text-center">Example 34</h1>
+
+    <h2 class="text-info text-center">Checkbox</h2>
+  <fieldset>
+    <legend>Hotel Ratings: </legend>
+    <label for="checkbox-1">2 Star</label>
+    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+    <label for="checkbox-2">3 Star</label>
+    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+    <label for="checkbox-3">4 Star</label>
+    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+    <label for="checkbox-4">5 Star</label>
+    <input type="checkbox" name="checkbox-4" id="checkbox-4">
+  </fieldset>
+  </div>
+</section>
+
+
+<!-- JS links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
